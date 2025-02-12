@@ -9,12 +9,13 @@ import {
 import Home from './components/Home/Home.jsx';
 import About from './components/About/About.jsx';
 import Contact from './components/Contact/Contact.jsx';
+import Users from './components/Contact/Users/Users.jsx';
 
 const router = new createBrowserRouter([
   {
     path: "/",
     element: <Home></Home>,
-    children:[
+    children: [
       {
         path: '/about',
         element: <About></About>
@@ -22,18 +23,14 @@ const router = new createBrowserRouter([
       {
         path: '/contact',
         element: <Contact></Contact>
+      },
+      {
+        path: '/users',
+        element: <Users></Users>
       }
     ]
-  },
-  {
-    path: "/about",
-    element: <div>Hello About world!</div>,
-  },
-  {
-    path: "/contact",
-    element: <div>Hello contact world!</div>,
   }
-  
+
 ])
 
 createRoot(document.getElementById('root')).render(
