@@ -6,7 +6,7 @@ const Post = ({ post }) => {
         border: '2px solid tomato',
         borderRadius: '7px',
         textAlign: 'left',
-        padding: '10px',
+        padding: '10px',    
     }
     return (
         <div style={postGrid}>
